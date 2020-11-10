@@ -11,7 +11,8 @@
 
 .promo {
 	height: 800px;
-	background: url('../img/bg/main_bg.jpg') center center/cover no-repeat;
+	/* css синтакс у background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+	background: url('../img/bg/main_bg.jpg') center center/cover no-repeat;/* center center - это position, cover - это size, no-repeat - это repeat */
 	padding: 39px 0 62px 0;
 }
 
@@ -29,4 +30,149 @@
 	text-transform: uppercase;
 	text-align: center;
 	margin-top: 14px;
+}
+
+h1 {
+	margin-top: 53px;
+}
+
+.title {
+	color: #f9bf3b;
+	font-family: "Roboto - Black";
+	font-size: 41px;
+	font-weight: 400;
+	line-height: 24px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h2.title {
+	margin-top: 30px;
+}
+
+.simple .title_big {
+	color: #ffffff;
+	font-family: "Roboto - Black";
+	font-size: 80px;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 21px;
+}
+
+.promo .promo_text {
+	padding: 0 13px;
+	margin-top: 23px;
+	color: #ffffff;
+	font-size: 21px;
+	font-weight: 300;
+	line-height: 28px;
+	font-family: "Roboto Light";
+	text-align: center;
+}
+
+.promo .promo_text span {
+	color: #f9bf3b;
+	font-family: "Roboto - Bold";
+	font-weight: 700;
+}
+
+.promo .promo_btn {
+	display: block;
+	margin: 73px auto;
+	width: 313px;
+	height: 72px;
+	box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.18); /* Тень.
+	insert - тень падает во внутрь
+	0 смещение по оси x
+	0 смещение по оси y
+	0 размытие тени. Чем больше значение, тем больше размытие
+	rgba(0, 0, 0, 0.18) цвет тени (и её прозрачность)*/
+	border: 4px solid rgba(0, 0, 0, 0.23);
+	background-image: linear-gradient(to top, #2798b9 0%, #3ab6da 100%);
+	text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.22);
+	color: #ffffff;
+	font-family: "Roboto Condensed";
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 24px;
+	text-transform: uppercase;
+	cursor: pointer;
+	outline: none; /* обводка при клике */
+}
+
+.more {
+	margin-top: 73px;
+}
+
+.more .more_text {
+	color: #ffffff;
+	font-family: "Roboto - Thin";
+	font-size: 15px;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.more .more_img {
+	display: block;
+	margin: 0 auto;
+	margin-top: 13px;
+}
+
+.waiting {
+	height: 604px;
+	background-color: #efefef;
+	padding: 85px 0 75px 0;
+}
+
+.waiting .waiting_header {
+	color: #252525;
+	font-family: "Roboto";
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.waiting .waiting_divider {
+	width: 217px;
+	height: 4px;
+	background-color: #f9bf3b;
+	margin: 0 auto;
+	margin-top: 18px;
+}
+
+.waiting .waiting_subheader {
+	color: #4a4a4a;
+	font-family: Roboto;
+	font-size: 23px;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 17px;
+}
+
+.waiting .waiting_wrapper {
+	margin-top: 45px;
+}
+
+.waiting .waiting_wrapper .waiting_item {
+	display: inline-block; /* строчно-блочная структура */
+	vertical-align: top;
+	margin: 0 15px;
+	width: 339px;
+	text-align: center;
+}
+
+.waiting .waiting_wrapper .waiting_item .waiting_img {
+	width: 100%; /* для картинок ширина всегда как у родителя вне зависимости от размера картинки */
+}
+
+.waiting .waiting_wrapper .waiting_item .waiting_descr {
+	margin-top: 33px;
+	color: #4a4a4a;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 21px;
 }
